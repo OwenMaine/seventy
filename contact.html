@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- site metas -->
+      <title>SEVEN FORTY TRUCK PARTS - Heavy Duty Truck Parts & Accessories</title>
+      <meta name="keywords" content="truck parts, heavy duty parts, semi truck parts, dump truck parts, commercial truck parts, Tampa truck parts, truck accessories">
+      <meta name="description" content="SEVEN FORTY TRUCK PARTS specializes in heavy duty truck parts and accessories. Everything you need for your semi or dump truck in Tampa, FL.">
+      <meta name="author" content="SEVEN FORTY TRUCK PARTS">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- favicon -->
+      <link rel="icon" href="images/favicon.png" type="image/png" />
+      <!-- font css -->
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+      <div class="header_section">
+         <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <a class="navbar-brand" href="index.html">
+                  <span style="font-size: 24px; font-weight: 700; color: #2590fe;">SEVEN FORTY TRUCK PARTS</span>
+               </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                     <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- header section end -->
+<!-- contact section start -->
+<div class="contact_section layout_padding">
+   <div class="container">
+       <!-- Header Section -->
+       <div class="row">
+           <div class="col-sm-12 text-center">
+               <h1 class="contact_taital">Contact Us</h1>
+               <p class="contact_text">Get in touch with our parts experts for immediate assistance</p>
+           </div>
+       </div>
+
+       <!-- Quick Contact Info -->
+       <div class="quick_contact mb-5">
+           <div class="row">
+               <div class="col-md-4">
+                   <div class="contact_info_box">
+                       <i class="fas fa-phone-alt"></i>
+                       <h3>Call Us</h3>
+                       <p>24/7 Emergency Service</p>
+                       <a href="tel:813-474-9708" class="contact_link">813-474-9708</a>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="contact_info_box">
+                       <i class="fas fa-map-marker-alt"></i>
+                       <h3>Visit Us</h3>
+                       <p>Our Location</p>
+                       <a href="https://goo.gl/maps/yourGoogleMapsLink" target="_blank" class="contact_link">
+                           3905 W SOUTH AVE<br>TAMPA, FL 33614
+                       </a>
+                   </div>
+               </div>
+               <div class="col-md-4">
+                   <div class="contact_info_box">
+                       <i class="fas fa-clock"></i>
+                       <h3>Business Hours</h3>
+                       <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                       <p>Sat: 9:00 AM - 2:00 PM</p>
+                       <p>Sun: Closed</p>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <!-- Contact Form and Map Section -->
+       <div class="contact_section_2">
+           <div class="row">
+               <div class="col-md-6">
+                   <div class="contact_form_container">
+                       <h2 class="form_title">Send Us a Message</h2>
+                       <form id="contactForm" class="contact_form" onsubmit="return validateForm(event)">
+                           <div class="form-group">
+                               <input type="text" class="form_input" id="name" placeholder="Your Name*" required>
+                               <i class="fas fa-user input-icon"></i>
+                           </div>
+                           <div class="form-group">
+                               <input type="tel" class="form_input" id="phone" placeholder="Phone Number*" required>
+                               <i class="fas fa-phone input-icon"></i>
+                           </div>
+                           <div class="form-group">
+                               <input type="email" class="form_input" id="email" placeholder="Email Address*" required>
+                               <i class="fas fa-envelope input-icon"></i>
+                           </div>
+                           <div class="form-group">
+                               <select class="form_input" id="inquiry_type" required>
+                                   <option value="">Select Inquiry Type*</option>
+                                   <option value="parts">Parts Inquiry</option>
+                                   <option value="emergency">Emergency Service</option>
+                                   <option value="technical">Technical Support</option>
+                                   <option value="other">Other</option>
+                               </select>
+                               <i class="fas fa-chevron-down input-icon"></i>
+                           </div>
+                           <div class="form-group">
+                               <textarea class="form_input" id="message" placeholder="Your Message*" rows="4" required></textarea>
+                               <i class="fas fa-comment input-icon"></i>
+                           </div>
+                           <div class="form_buttons">
+                               <button type="submit" class="submit_btn">
+                                   <i class="fas fa-paper-plane"></i> Send Message
+                               </button>
+                           </div>
+                       </form>
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="map_container">
+                       <h2 class="form_title">Our Location</h2>
+                       <div class="map-responsive">
+                           <iframe 
+                               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.0!2d-82.5!3d27.9!4m5!3s0x0!4m2!3d27.9!4d-82.5" 
+                               width="100%" 
+                               height="450" 
+                               style="border:0;" 
+                               allowfullscreen="" 
+                               loading="lazy" 
+                               referrerpolicy="no-referrer-when-downgrade">
+                           </iframe>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- contact section end -->
+
+<style>
+.contact_section {
+   background: linear-gradient(135deg, #1a2537 0%, #2c3e50 100%);
+   padding: 80px 0;
+   position: relative;
+   color: #ffffff;
+}
+
+.contact_taital {
+   font-size: 42px;
+   color: #ffffff;
+   font-weight: 700;
+   margin-bottom: 15px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+
+.contact_text {
+   color: rgba(255, 255, 255, 0.8);
+   font-size: 18px;
+   margin-bottom: 50px;
+}
+
+.quick_contact {
+   margin-top: 30px;
+}
+
+.contact_info_box {
+   background: rgba(255, 255, 255, 0.1);
+   padding: 30px;
+   border-radius: 10px;
+   text-align: center;
+   height: 100%;
+   transition: transform 0.3s ease;
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.contact_info_box:hover {
+   transform: translateY(-5px);
+   background: rgba(255, 255, 255, 0.15);
+}
+
+.contact_info_box i {
+   font-size: 32px;
+   color: #2590fe;
+   margin-bottom: 15px;
+}
+
+.contact_info_box h3 {
+   font-size: 22px;
+   margin-bottom: 10px;
+   color: #ffffff;
+}
+
+.contact_info_box p {
+   color: rgba(255, 255, 255, 0.8);
+   margin-bottom: 5px;
+}
+
+.contact_link {
+   color: #2590fe;
+   text-decoration: none;
+   transition: color 0.3s ease;
+}
+
+.contact_link:hover {
+   color: #ffffff;
+}
+
+.contact_form_container {
+   background: rgba(255, 255, 255, 0.1);
+   padding: 30px;
+   border-radius: 10px;
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form_title {
+   font-size: 24px;
+   color: #ffffff;
+   margin-bottom: 25px;
+   font-weight: 600;
+}
+
+.form-group {
+   position: relative;
+   margin-bottom: 20px;
+}
+
+.form_input {
+   width: 100%;
+   padding: 12px 15px 12px 45px;
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 5px;
+   background: rgba(255, 255, 255, 0.1);
+   color: #ffffff;
+   font-size: 16px;
+   transition: all 0.3s ease;
+}
+
+.form_input:focus {
+   background: rgba(255, 255, 255, 0.15);
+   border-color: #2590fe;
+   outline: none;
+}
+
+.input-icon {
+   position: absolute;
+   left: 15px;
+   top: 50%;
+   transform: translateY(-50%);
+   color: rgba(255, 255, 255, 0.6);
+}
+
+textarea.form_input {
+   resize: vertical;
+   min-height: 120px;
+}
+
+textarea.form_input + .input-icon {
+   top: 15px;
+   transform: none;
+}
+
+.submit_btn {
+   background: #2590fe;
+   color: #ffffff;
+   border: none;
+   padding: 12px 30px;
+   border-radius: 5px;
+   font-size: 16px;
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   display: inline-flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.submit_btn:hover {
+   background: #1a7ad9;
+   transform: translateY(-2px);
+}
+
+.map_container {
+   background: rgba(255, 255, 255, 0.1);
+   padding: 30px;
+   border-radius: 10px;
+   height: 100%;
+   backdrop-filter: blur(10px);
+   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.map-responsive {
+   overflow: hidden;
+   position: relative;
+   height: 0;
+   padding-bottom: 75%;
+   border-radius: 5px;
+}
+
+.map-responsive iframe {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   border-radius: 5px;
+}
+
+@media (max-width: 991px) {
+   .contact_info_box {
+       margin-bottom: 30px;
+   }
+   
+   .map_container {
+       margin-top: 30px;
+   }
+}
+
+@media (max-width: 768px) {
+   .contact_taital {
+       font-size: 32px;
+   }
+   
+   .contact_text {
+       font-size: 16px;
+   }
+   
+   .form_title {
+       font-size: 20px;
+   }
+}
+</style>
+
+<script>
+function validateForm(event) {
+   event.preventDefault();
+   
+   // Basic form validation
+   const name = document.getElementById('name').value;
+   const phone = document.getElementById('phone').value;
+   const email = document.getElementById('email').value;
+   const message = document.getElementById('message').value;
+   
+   if (!name || !phone || !email || !message) {
+       alert('Please fill in all required fields');
+       return false;
+   }
+   
+   // Email validation
+   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+   if (!emailRegex.test(email)) {
+       alert('Please enter a valid email address');
+       return false;
+   }
+   
+   // Phone validation
+   const phoneRegex = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
+   if (!phoneRegex.test(phone)) {
+       alert('Please enter a valid phone number');
+       return false;
+   }
+   
+   // If validation passes, you can submit the form
+   alert('Thank you for your message. We will contact you soon!');
+   document.getElementById('contactForm').reset();
+   return true;
+}
+</script>
+    <!-- footer section start -->
+<div class="footer_section layout_padding">
+   <div class="container">
+       <div class="row">
+           <div class="col-lg-3 col-sm-6">
+               <h3 class="useful_text">Quick Links</h3>
+               <div class="footer_menu">
+                   <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="about.html">About Us</a></li>
+                       <li><a href="services.html">Services</a></li>
+                       <li><a href="products.html">Products</a></li>
+                       <li><a href="parts-catalog.html">Parts Catalog</a></li>
+                       <li><a href="contact.html">Contact</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="col-lg-3 col-sm-6">
+               <h3 class="useful_text">Our Services</h3>
+               <div class="footer_menu">
+                   <ul>
+                       <li><a href="services.html#parts-supply">Parts Supply</a></li>
+                       <li><a href="services.html#emergency-service">24/7 Emergency Service</a></li>
+                       <li><a href="services.html#technical-support">Technical Support</a></li>
+                       <li><a href="services.html#custom-solutions">Custom Solutions</a></li>
+                       <li><a href="services.html#shipping">Nationwide Shipping</a></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="col-lg-3 col-sm-6">
+               <h3 class="useful_text">Connect With Us</h3>
+               <div class="footer_social_icon">
+                   
+               </div>
+               <div class="business_hours">
+                   <h4>Business Hours</h4>
+                   <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                   <p>Saturday: 9:00 AM - 2:00 PM</p>
+                   <p>Sunday: Closed</p>
+               </div>
+           </div>
+           <div class="col-lg-3 col-sm-6">
+               <h3 class="useful_text">Contact Us</h3>
+               <div class="location_text">
+                   <ul>
+                       <li>
+                           <a href="https://maps.google.com/?q=3905 W SOUTH AVE TAMPA, FL 33614" target="_blank">
+                               <i class="fas fa-map-marker-alt"></i>
+                               <span class="padding_left_10">3905 W SOUTH AVE<br>TAMPA, FL 33614</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="tel:813-474-9708">
+                               <i class="fas fa-phone"></i>
+                               <span class="padding_left_10">813-474-9708</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="mailto:service@sevenfortytp.com">
+                               <i class="fas fa-envelope"></i>
+                               <span class="padding_left_10">service@sevenfortytp.com</span>
+                           </a>
+                       </li>
+                       <li>
+                           <a href="https://sevenfortytp.com">
+                               <i class="fas fa-globe"></i>
+                               <span class="padding_left_10">www.sevenfortytp.com</span>
+                           </a>
+                       </li>
+                   </ul>
+               </div>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- footer section end -->
+
+<!-- copyright section start -->
+<div class="copyright_section">
+   <div class="container">
+       <div class="row">
+           <div class="col-md-12">
+               <p class="copyright_text">© 2025 SEVEN FORTY TRUCK PARTS. All Rights Reserved.</p>
+           </div>
+       </div>
+   </div>
+</div>
+<!-- copyright section end -->
+
+<style>
+.footer_section {
+   background: #1a2537;
+   padding: 70px 0 40px 0;
+   color: #ffffff;
+}
+
+.useful_text {
+   color: #ffffff;
+   font-size: 22px;
+   font-weight: 600;
+   margin-bottom: 25px;
+}
+
+.footer_menu ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.footer_menu ul li {
+   margin-bottom: 12px;
+}
+
+.footer_menu ul li a {
+   color: #ffffff;
+   opacity: 0.8;
+   text-decoration: none;
+   transition: opacity 0.3s ease;
+   font-size: 15px;
+}
+
+.footer_menu ul li a:hover {
+   opacity: 1;
+}
+
+.footer_social_icon ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   display: flex;
+   gap: 15px;
+   margin-bottom: 30px;
+}
+
+.footer_social_icon ul li a {
+   width: 40px;
+   height: 40px;
+   background: rgba(255,255,255,0.1);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 50%;
+   color: #ffffff;
+   transition: all 0.3s ease;
+}
+
+.footer_social_icon ul li a:hover {
+   background: #2590fe;
+   transform: translateY(-3px);
+}
+
+.location_text ul {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+}
+
+.location_text ul li {
+   margin-bottom: 15px;
+}
+
+.location_text ul li a {
+   color: #ffffff;
+   opacity: 0.8;
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   transition: opacity 0.3s ease;
+   font-size: 15px;
+}
+
+.location_text ul li a:hover {
+   opacity: 1;
+}
+
+.padding_left_10 {
+   padding-left: 10px;
+}
+
+.business_hours {
+   margin-top: 30px;
+}
+
+.business_hours h4 {
+   color: #ffffff;
+   font-size: 18px;
+   margin-bottom: 15px;
+}
+
+.business_hours p {
+   color: #ffffff;
+   opacity: 0.8;
+   margin-bottom: 5px;
+   font-size: 14px;
+}
+
+.copyright_section {
+   background: #141d2b;
+   padding: 20px 0;
+   color: #ffffff;
+}
+
+.copyright_text {
+   color: #ffffff;
+   opacity: 0.8;
+   margin: 0;
+   text-align: center;
+   font-size: 14px;
+}
+
+@media (max-width: 768px) {
+   .footer_section {
+       padding: 40px 0 20px 0;
+   }
+   
+   .useful_text {
+       margin-top: 20px;
+   }
+   
+   .footer_social_icon ul {
+       margin-bottom: 20px;
+   }
+}
+</style>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+   </body>
+</html>
